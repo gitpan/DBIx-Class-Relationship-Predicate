@@ -1,5 +1,5 @@
 ---
-abstract: 'Predicate methods for relationship accessors'
+abstract: 'Predicates for relationship accessors'
 author:
   - 'Wallace Reis <wreis@cpan.org>'
 build_requires:
@@ -26,4 +26,4 @@ requires:
   parent: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
