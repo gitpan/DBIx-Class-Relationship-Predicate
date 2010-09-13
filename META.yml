@@ -1,5 +1,5 @@
 ---
-abstract: 'Predicates for relationship accessors'
+abstract: 'Predicate methods for relationship accessors'
 author:
   - 'Wallace Reis <wreis@cpan.org>'
 build_requires:
