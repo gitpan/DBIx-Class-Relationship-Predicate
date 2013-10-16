@@ -5,13 +5,61 @@ use strict;
 use parent 'DBIx::Class';
 use Sub::Name ();
 
+our $VERSION = '0.04'; # VERSION
+
+# ABSTRACT: Predicates for relationship accessors
+
+
+sub register_relationship {
+    my ($class, $rel, $info) = @_;
+    my $attrs = $info->{'attrs'};
+    if (my $acc_type = $attrs->{'accessor'}) {
+        if ( defined($attrs->{'predicate'}) || !exists($attrs->{'predicate'}) ) {
+            $class->add_relationship_predicate(
+                $rel, $acc_type, $attrs->{'predicate'}
+            );
+        }
+    }
+    $class->next::method($rel, $info);
+}
+
+sub add_relationship_predicate {
+    my ( $class, $relname, $accessor_type, $predicate ) = @_;
+    $predicate ||= "has_${relname}";
+    my $name = join '::', $class, $predicate;
+
+    my $predicate_meth;
+    if ( $accessor_type =~ m{single|filter}i ) {
+        $predicate_meth = Sub::Name::subname($name, sub {
+            return defined(shift->$relname);
+        });
+    } elsif ( $accessor_type eq 'multi' ) {
+        $predicate_meth = Sub::Name::subname($name, sub {
+            return shift->$relname->count;
+        });
+    }
+
+    {
+        no strict 'refs';
+        no warnings 'redefine';
+        *$name = $predicate_meth;
+    }
+}
+
+
+1;
+
+__END__
+
+=pod
+
 =head1 NAME
 
 DBIx::Class::Relationship::Predicate - Predicates for relationship accessors
 
-=cut
+=head1 VERSION
 
-our $VERSION = '0.03';
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -59,44 +107,6 @@ key in the relationship's attrs hashref.
        { 'predicate' => undef }
    );
 
-=cut
-
-sub register_relationship {
-    my ($class, $rel, $info) = @_;
-    my $attrs = $info->{'attrs'};
-    if (my $acc_type = $attrs->{'accessor'}) {
-        if ( defined($attrs->{'predicate'}) || !exists($attrs->{'predicate'}) ) {
-            $class->add_relationship_predicate(
-                $rel, $acc_type, $attrs->{'predicate'}
-            );
-        }
-    }
-    $class->next::method($rel, $info);
-}
-
-sub add_relationship_predicate {
-    my ( $class, $relname, $accessor_type, $predicate ) = @_;
-    $predicate ||= "has_${relname}";
-    my $name = join '::', $class, $predicate;
-
-    my $predicate_meth;
-    if ( $accessor_type =~ m{single|filter}i ) {
-        $predicate_meth = Sub::Name::subname($name, sub {
-            return defined(shift->$relname);
-        });
-    } elsif ( $accessor_type eq 'multi' ) {
-        $predicate_meth = Sub::Name::subname($name, sub {
-            return shift->$relname->count;
-        });
-    }
-
-    {
-        no strict 'refs';
-        no warnings 'redefine';
-        *$name = $predicate_meth;
-    }
-}
-
 =head1 AUTHOR
 
 Wallace Reis, C<< <wreis at cpan.org> >>
@@ -143,6 +153,15 @@ Copyright 2009 Wallace Reis.
 
 This library is free software and may be distributed under the same terms as perl itself.
 
-=cut
+=head1 AUTHOR
 
-1;
+Wallace Reis <wreis@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Wallace Reis.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut

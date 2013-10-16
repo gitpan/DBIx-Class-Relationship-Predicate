@@ -1,0 +1,506 @@
+=head2 Wed Oct 16 19:40:00 2013: C<Module> L<DBI|DBI>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.628>
+
+=item *
+
+C<EXE_FILES: dbiproxy dbiprof dbilogstrip>
+
+=back
+
+=head2 Wed Oct 16 19:41:16 2013: C<Module> L<DBD::SQLite|DBD::SQLite>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.40>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:41:22 2013: C<Module> L<Data::Dumper::Concise|Data::Dumper::Concise>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.020>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:41:26 2013: C<Module> L<Config::Any|Config::Any>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.24>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:41:35 2013: C<Module> L<Context::Preserve|Context::Preserve>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.01>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:41:45 2013: C<Module> L<Class::XSAccessor|Class::XSAccessor>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.18>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:41:49 2013: C<Module> L<Class::Accessor::Grouped|Class::Accessor::Grouped>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.10010>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:41:53 2013: C<Module> L<Hash::Merge|Hash::Merge>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.12>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:42:04 2013: C<Module> L<SQL::Abstract|SQL::Abstract>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.74>
+
+=item *
+
+C<EXE_FILES: script/format-sql>
+
+=back
+
+=head2 Wed Oct 16 19:42:08 2013: C<Module> L<Data::Compare|Data::Compare>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.23>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:42:11 2013: C<Module> L<Module::Find|Module::Find>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:42:15 2013: C<Module> L<Class::Accessor|Class::Accessor>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.34>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:42:28 2013: C<Module> L<Class::C3|Class::C3>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.25>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:42:30 2013: C<Module> L<Class::C3::Componentised|Class::C3::Componentised>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.001000>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:47:20 2013: C<Module> L<DBIx::Class|DBIx::Class>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.08250>
+
+=item *
+
+C<EXE_FILES: script/dbicadmin>
+
+=back
+
+=head2 Wed Oct 16 19:48:13 2013: C<Module> L<ExtUtils::MakeMaker|ExtUtils::MakeMaker>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.80>
+
+=item *
+
+C<EXE_FILES: bin/instmodsh>
+
+=back
+
+=head2 Wed Oct 16 19:48:16 2013: C<Module> L<parent|parent>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.228>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:48:30 2013: C<Module> L<YAML|YAML>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.84>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:48:33 2013: C<Module> L<Import::Into|Import::Into>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.001001>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:48:35 2013: C<Module> L<Package::Variant|Package::Variant>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.001004>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:48:43 2013: C<Module> L<XML::Writer|XML::Writer>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.623>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Oct 16 19:50:09 2013: C<Module> L<SQL::Translator|SQL::Translator>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11016>
+
+=item *
+
+C<EXE_FILES: script/sqlt-diagram script/sqlt-diff script/sqlt-diff-old script/sqlt-dumper script/sqlt-graph script/sqlt>
+
+=back
+
+=head2 Wed Oct 16 19:50:24 2013: C<Module> L<Test::Simple|Test::Simple>
+
+=over 4
+
+=item *
+
+C<installed into: /home/wallacer/DBIC-Relationship-Predicate/local-lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.99>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
