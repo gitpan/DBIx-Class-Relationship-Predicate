@@ -3,7 +3,7 @@ NAME
     accessors
 
 VERSION
-    version 0.04
+    version 0.05
 
 SYNOPSIS
         package My::Schema::Result::Foo;
